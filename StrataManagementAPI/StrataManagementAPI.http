@@ -1,0 +1,6 @@
+@StrataManagementAPI_HostAddress = http://localhost:5185
+
+GET {{StrataManagementAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

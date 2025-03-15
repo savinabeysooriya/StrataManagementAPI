@@ -13,8 +13,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IBuildingRepository>(provider =>
     new BuildingRepository(provider.GetRequiredService<IConfiguration>()));
 
+builder.Services.AddSingleton<IOwnerRepository>(provider =>
+    new OwnerRepository(provider.GetRequiredService<IConfiguration>()));
+
+builder.Services.AddSingleton<ITenantRepository>(provider =>
+    new TenantRepository(provider.GetRequiredService<IConfiguration>()));
+
 // Add services
-builder.Services.AddScoped<IBuildingService, BuildingService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 
 var app = builder.Build();
 

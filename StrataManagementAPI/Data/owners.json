@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "Name": "John Doe",
+    "Contact": "john.doe@example.com",
+    "BuildingId": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Jane Smith",
+    "Contact": "jane.smith@example.com",
+    "BuildingId": 2
+  },
+  {
+    "Id": 3,
+    "Name": "Robert Johnson",
+    "Contact": "robert.johnson@example.com",
+    "BuildingId": 3
+  },
+  {
+    "Id": 4,
+    "Name": "Emily Davis",
+    "Contact": "emily.davis@example.com",
+    "BuildingId": 4
+  },
+  {
+    "Id": 5,
+    "Name": "Michael Brown",
+    "Contact": "michael.brown@example.com",
+    "BuildingId": 5
+  },
+  {
+    "Id": 6,
+    "Name": "Jessica Wilson",
+    "Contact": "jessica.wilson@example.com",
+    "BuildingId": 6
+  },
+  {
+    "Id": 7,
+    "Name": "David Martinez",
+    "Contact": "david.martinez@example.com",
+    "BuildingId": 7
+  },
+  {
+    "Id": 8,
+    "Name": "Sarah Anderson",
+    "Contact": "sarah.anderson@example.com",
+    "BuildingId": 8
+  },
+  {
+    "Id": 9,
+    "Name": "Christopher Thomas",
+    "Contact": "christopher.thomas@example.com",
+    "BuildingId": 9
+  },
+  {
+    "Id": 10,
+    "Name": "Amanda Garcia",
+    "Contact": "amanda.garcia@example.com",
+    "BuildingId": 10
+  }
+]

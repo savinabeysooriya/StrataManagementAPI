@@ -9,7 +9,7 @@ public class BuildingRepository : JsonRepositoryBase<Building>, IBuildingReposit
     {
     }
 
-    public async Task<List<Building>> GetAllBuildings()
+    public async Task<List<Building>> GetBuildings()
     {
         return await GetAllAsync();
     }

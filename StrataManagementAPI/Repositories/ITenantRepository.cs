@@ -2,7 +2,7 @@
 
 namespace StrataManagementAPI.Repositories;
 
-public interface IBuildingRepository
+public interface ITenantRepository
 {
-    Task<List<Building>> GetBuildings();
+    Task<List<Tenant>> GetTenants();
 }

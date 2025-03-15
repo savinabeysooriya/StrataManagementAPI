@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "Name": "Alice Johnson",
+    "Contact": "alice.johnson@example.com",
+    "BuildingId": 1,
+    "UnitId": 101
+  },
+  {
+    "Id": 2,
+    "Name": "Mark Robinson",
+    "Contact": "mark.robinson@example.com",
+    "BuildingId": 2,
+    "UnitId": 201
+  },
+  {
+    "Id": 3,
+    "Name": "Sophia Martinez",
+    "Contact": "sophia.martinez@example.com",
+    "BuildingId": 3,
+    "UnitId": 301
+  },
+  {
+    "Id": 4,
+    "Name": "Daniel Thompson",
+    "Contact": "daniel.thompson@example.com",
+    "BuildingId": 4,
+    "UnitId": 401
+  },
+  {
+    "Id": 5,
+    "Name": "Emma Brown",
+    "Contact": "emma.brown@example.com",
+    "BuildingId": 5,
+    "UnitId": 501
+  },
+  {
+    "Id": 6,
+    "Name": "Liam Wilson",
+    "Contact": "liam.wilson@example.com",
+    "BuildingId": 6,
+    "UnitId": 601
+  },
+  {
+    "Id": 7,
+    "Name": "Olivia Davis",
+    "Contact": "olivia.davis@example.com",
+    "BuildingId": 7,
+    "UnitId": 701
+  },
+  {
+    "Id": 8,
+    "Name": "Noah Anderson",
+    "Contact": "noah.anderson@example.com",
+    "BuildingId": 8,
+    "UnitId": 801
+  },
+  {
+    "Id": 9,
+    "Name": "William Clark",
+    "Contact": "william.clark@example.com",
+    "BuildingId": 9,
+    "UnitId": 901
+  },
+  {
+    "Id": 10,
+    "Name": "Mia Lewis",
+    "Contact": "mia.lewis@example.com",
+    "BuildingId": 10,
+    "UnitId": 1001
+  }
+]

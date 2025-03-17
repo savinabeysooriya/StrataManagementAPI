@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace StrataManagementAPI.Repositories;
 
@@ -33,7 +34,7 @@ public class JsonRepositoryBase<T> where T : class
         try
         {
             var json = await File.ReadAllTextAsync(_filePath);
-            return JsonSerializer.Deserialize<List<T>>(json) ?? new List<T>();
+            return JsonSerializer.Deserialize<List<T>>(json, GetJsonOptions()) ?? new List<T>();
         }
         finally
         {
@@ -46,12 +47,22 @@ public class JsonRepositoryBase<T> where T : class
         await _fileLock.WaitAsync();
         try
         {
-            var json = JsonSerializer.Serialize(items);
+            var json = JsonSerializer.Serialize(items, GetJsonOptions());
             await File.WriteAllTextAsync(_filePath, json);
         }
         finally
         {
             _fileLock.Release();
         }
+    }
+
+    protected JsonSerializerOptions GetJsonOptions()
+    {
+        return new JsonSerializerOptions
+        {
+            Converters = { new JsonStringEnumConverter() },
+            PropertyNameCaseInsensitive = true,
+            WriteIndented = true
+        };
     }
 }

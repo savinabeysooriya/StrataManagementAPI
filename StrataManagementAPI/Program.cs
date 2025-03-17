@@ -19,8 +19,12 @@ builder.Services.AddSingleton<IOwnerRepository>(provider =>
 builder.Services.AddSingleton<ITenantRepository>(provider =>
     new TenantRepository(provider.GetRequiredService<IConfiguration>()));
 
+builder.Services.AddSingleton<IMaintenanceRequestRepository>(provider =>
+    new MaintenanceRequestRepository(provider.GetRequiredService<IConfiguration>()));
+
 // Add services
 builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IBuildingMemberService, BuildingMemberService>();
 
 var app = builder.Build();
 

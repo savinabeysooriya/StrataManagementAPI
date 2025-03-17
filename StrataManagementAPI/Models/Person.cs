@@ -2,8 +2,8 @@
 
 public class Person
 {
-    public int Id { get; set; }
+    public string Id { get; set; }
     public string Name { get; set; }
     public string Contact { get; set; }
-    public int BuildingId { get; set; }
+    public string BuildingId { get; set; }
 }

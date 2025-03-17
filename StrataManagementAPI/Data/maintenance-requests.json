@@ -1,0 +1,92 @@
+[
+  {
+    "Id": "1",
+    "Title": "Leaky Faucet",
+    "Description": "Water is dripping continuously in the kitchen sink.",
+    "Status": "Pending",
+    "CreatedByUserId": "101",
+    "AssignedBuildingId": "1",
+    "CreatedDate": "2025-03-17T10:15:00Z"
+  },
+  {
+    "Id": "2",
+    "Title": "Broken Elevator",
+    "Description": "Elevator is not working on the 3rd floor.",
+    "Status": "InProgress",
+    "CreatedByUserId": "102",
+    "AssignedBuildingId": "2",
+    "CreatedDate": "2025-03-16T14:30:00Z"
+  },
+  {
+    "Id": "3",
+    "Title": "Power Outage",
+    "Description": "No electricity in the basement parking area.",
+    "Status": "Completed",
+    "CreatedByUserId": "103",
+    "AssignedBuildingId": "3",
+    "CreatedDate": "2025-03-15T09:45:00Z"
+  },
+  {
+    "Id": "4",
+    "Title": "Cracked Window",
+    "Description": "Window in the main lobby is cracked and needs replacement.",
+    "Status": "Pending",
+    "CreatedByUserId": "104",
+    "AssignedBuildingId": "4",
+    "CreatedDate": "2025-03-14T11:00:00Z"
+  },
+  {
+    "Id": "5",
+    "Title": "AC Not Cooling",
+    "Description": "The air conditioning unit in the conference room is not cooling.",
+    "Status": "InProgress",
+    "CreatedByUserId": "105",
+    "AssignedBuildingId": "5",
+    "CreatedDate": "2025-03-13T16:20:00Z"
+  },
+  {
+    "Id": "6",
+    "Title": "Parking Gate Malfunction",
+    "Description": "The automatic parking gate is stuck and not opening properly.",
+    "Status": "Completed",
+    "CreatedByUserId": "106",
+    "AssignedBuildingId": "6",
+    "CreatedDate": "2025-03-12T08:10:00Z"
+  },
+  {
+    "Id": "7",
+    "Title": "Ceiling Leak",
+    "Description": "Water is leaking from the ceiling in the hallway.",
+    "Status": "Pending",
+    "CreatedByUserId": "107",
+    "AssignedBuildingId": "7",
+    "CreatedDate": "2025-03-11T12:50:00Z"
+  },
+  {
+    "Id": "8",
+    "Title": "Security Camera Issue",
+    "Description": "CCTV camera in the lobby is not functioning.",
+    "Status": "InProgress",
+    "CreatedByUserId": "108",
+    "AssignedBuildingId": "8",
+    "CreatedDate": "2025-03-10T14:00:00Z"
+  },
+  {
+    "Id": "9",
+    "Title": "Pest Control Required",
+    "Description": "Increased sighting of pests in the storage area.",
+    "Status": "Completed",
+    "CreatedByUserId": "109",
+    "AssignedBuildingId": "9",
+    "CreatedDate": "2025-03-09T10:30:00Z"
+  },
+  {
+    "Id": "10",
+    "Title": "Fence Repair",
+    "Description": "The backyard fence has broken panels.",
+    "Status": "Pending",
+    "CreatedByUserId": "110",
+    "AssignedBuildingId": "10",
+    "CreatedDate": "2025-03-08T09:00:00Z"
+  }
+]

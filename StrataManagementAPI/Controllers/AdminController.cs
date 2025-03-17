@@ -28,4 +28,11 @@ public class AdminController(IAdminService adminService) : ControllerBase
         return Ok(tenants);
     }
 
+    [HttpGet("maintenance-requests")]
+    public async Task<IActionResult> GetMaintenanceRequests()
+    {
+        var maintenanceRequests = await adminService.GetMaintenanceRequests();
+        return Ok(maintenanceRequests);
+    }
+
 }

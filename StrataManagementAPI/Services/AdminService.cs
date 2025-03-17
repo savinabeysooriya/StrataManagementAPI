@@ -4,7 +4,7 @@ using StrataManagementAPI.Repositories;
 
 namespace StrataManagementAPI.Services;
 
-public class AdminService(IBuildingRepository buildingRepository, IOwnerRepository ownerRepository, ITenantRepository tenantRepository) : IAdminService
+public class AdminService(IBuildingRepository buildingRepository, IOwnerRepository ownerRepository, ITenantRepository tenantRepository, IMaintenanceRequestRepository maintenanceRequestRepository) : IAdminService
 {
     public async Task<List<Building>> GetBuildings()
     {
@@ -19,5 +19,10 @@ public class AdminService(IBuildingRepository buildingRepository, IOwnerReposito
     public async Task<List<Tenant>> GetTenants()
     {
         return await tenantRepository.GetTenants();
+    }
+
+    public async Task<List<MaintenanceRequest>> GetMaintenanceRequests()
+    {
+        return await maintenanceRequestRepository.GetMaintenanceRequests();
     }
 }

@@ -2,5 +2,5 @@
 
 public class Tenant : Person
 {
-    public int UnitId { get; set; }
+    public string UnitId { get; set; }
 }

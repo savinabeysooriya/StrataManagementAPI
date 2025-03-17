@@ -1,60 +1,60 @@
 [
   {
-    "Id": 1,
+    "Id": "1",
     "Name": "Sky Tower",
     "Address": "123 Main Street",
     "NumberOfUnits": 50
   },
   {
-    "Id": 2,
+    "Id": "2",
     "Name": "Ocean View",
     "Address": "456 Beach Road",
     "NumberOfUnits": 30
   },
   {
-    "Id": 3,
+    "Id": "3",
     "Name": "Mountain Heights",
     "Address": "789 Hilltop Avenue",
     "NumberOfUnits": 40
   },
   {
-    "Id": 4,
+    "Id": "4",
     "Name": "Sunset Residences",
     "Address": "321 Sunset Boulevard",
     "NumberOfUnits": 60
   },
   {
-    "Id": 5,
+    "Id": "5",
     "Name": "Riverfront Apartments",
     "Address": "654 Riverside Lane",
     "NumberOfUnits": 45
   },
   {
-    "Id": 6,
+    "Id": "6",
     "Name": "Greenwood Estate",
     "Address": "987 Forest Drive",
     "NumberOfUnits": 55
   },
   {
-    "Id": 7,
+    "Id": "7",
     "Name": "Golden Sands",
     "Address": "741 Shoreline Street",
     "NumberOfUnits": 35
   },
   {
-    "Id": 8,
+    "Id": "8",
     "Name": "Maple Residency",
     "Address": "852 Maple Road",
     "NumberOfUnits": 25
   },
   {
-    "Id": 9,
+    "Id": "9",
     "Name": "Central Park Towers",
     "Address": "369 Park Avenue",
     "NumberOfUnits": 70
   },
   {
-    "Id": 10,
+    "Id": "10",
     "Name": "Harbor View",
     "Address": "159 Dockside Drive",
     "NumberOfUnits": 50

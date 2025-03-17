@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "123",
+    "Username": "admin@strata.com",
+    "PasswordHash": "$2a$11$qdDkBIUmUvGPcU8mrWAugeNZaCIu6Pw0T0fij5Bu11u.rSPJl.fUS",
+    "Role": "Admin",
+    "BuildingId": null
+  },
+  {
+    "Id": "1",
+    "Username": "owner@building.com",
+    "PasswordHash": "$2a$11$qdDkBIUmUvGPcU8mrWAugeNZaCIu6Pw0T0fij5Bu11u.rSPJl.fUS",
+    "Role": "Owner",
+    "BuildingId": "1"
+  }
+]

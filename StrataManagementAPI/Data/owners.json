@@ -2,7 +2,7 @@
   {
     "Id": "1",
     "Name": "John Doe",
-    "Contact": "john.doe@example.com",
+    "Contact": "owner@building.com",
     "BuildingId": "1"
   },
   {

@@ -11,6 +11,6 @@
     "Username": "owner@building.com",
     "PasswordHash": "$2a$11$qdDkBIUmUvGPcU8mrWAugeNZaCIu6Pw0T0fij5Bu11u.rSPJl.fUS",
     "Role": "Owner",
-    "BuildingId": "1"
+    "BuildingId": "101"
   }
 ]

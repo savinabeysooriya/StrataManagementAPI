@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StrataManagementAPI.Models;
 using StrataManagementAPI.Services;
 
@@ -14,5 +15,13 @@ public class BuildingMemberController(IBuildingMemberService buildingMemberServi
     {
         var maintenanceRequest = await buildingMemberService.CreateMaintenanceRequest(request);
         return Ok(maintenanceRequest);
+    }
+
+    [HttpGet("my-building")]
+    [Authorize(Policy = "BuildingMember")]
+    public async Task<IActionResult> GetMyBuilding()
+    {
+        var buildings = await buildingMemberService.GetMyBuilding(User);
+        return Ok(buildings);
     }
 }

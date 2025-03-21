@@ -25,7 +25,7 @@ public class AuthService(IPasswordHasher passwordHasher, IUserRepository userRep
         }
 
         var token = GenerateJwtToken(user);
-        return new AuthResult { Success = true, Token = token };
+        return new AuthResult { Success = true, Token = token, UserRole = user.Role };
     }
 
     private string GenerateJwtToken(User user)

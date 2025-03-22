@@ -4,8 +4,8 @@
     "Title": "Leaky Faucet",
     "Description": "Water is dripping continuously in the kitchen sink.",
     "Status": "Pending",
-    "CreatedByUserId": "101",
-    "AssignedBuildingId": "1",
+    "CreatedByUserId": "2025",
+    "AssignedBuildingId": "101",
     "CreatedDate": "2025-03-17T10:15:00Z"
   },
   {
@@ -31,8 +31,8 @@
     "Title": "Cracked Window",
     "Description": "Window in the main lobby is cracked and needs replacement.",
     "Status": "Pending",
-    "CreatedByUserId": "104",
-    "AssignedBuildingId": "4",
+    "CreatedByUserId": "2025",
+    "AssignedBuildingId": "101",
     "CreatedDate": "2025-03-14T11:00:00Z"
   },
   {
@@ -49,8 +49,8 @@
     "Title": "Parking Gate Malfunction",
     "Description": "The automatic parking gate is stuck and not opening properly.",
     "Status": "Completed",
-    "CreatedByUserId": "106",
-    "AssignedBuildingId": "6",
+    "CreatedByUserId": "2025",
+    "AssignedBuildingId": "101",
     "CreatedDate": "2025-03-12T08:10:00Z"
   },
   {
@@ -67,8 +67,8 @@
     "Title": "Security Camera Issue",
     "Description": "CCTV camera in the lobby is not functioning.",
     "Status": "InProgress",
-    "CreatedByUserId": "108",
-    "AssignedBuildingId": "8",
+    "CreatedByUserId": "2025",
+    "AssignedBuildingId": "101",
     "CreatedDate": "2025-03-10T14:00:00Z"
   },
   {

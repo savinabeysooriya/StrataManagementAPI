@@ -13,7 +13,7 @@ public class BuildingMemberController(IBuildingMemberService buildingMemberServi
     [HttpPost("maintenance-request")]
     public async Task<IActionResult> CreateMaintenanceRequest([FromBody] MaintenanceRequestModel request)
     {
-        var maintenanceRequest = await buildingMemberService.CreateMaintenanceRequest(request);
+        var maintenanceRequest = await buildingMemberService.CreateMaintenanceRequest(request, User);
         return Ok(maintenanceRequest);
     }
 
@@ -23,5 +23,13 @@ public class BuildingMemberController(IBuildingMemberService buildingMemberServi
     {
         var buildings = await buildingMemberService.GetMyBuilding(User);
         return Ok(buildings);
+    }
+
+    [HttpGet("my-requests")]
+    [Authorize(Policy = "BuildingMember")]
+    public async Task<IActionResult> GetMyRequests()
+    {
+        var maintenanceRequests = await buildingMemberService.GetMyRequests(User);
+        return Ok(maintenanceRequests);
     }
 }

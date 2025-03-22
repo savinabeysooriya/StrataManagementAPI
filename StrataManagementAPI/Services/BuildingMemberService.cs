@@ -4,10 +4,11 @@ using System.Security.Claims;
 
 namespace StrataManagementAPI.Services;
 
-public class BuildingMemberService(IBuildingRepository buildingRepository) : IBuildingMemberService
+public class BuildingMemberService(IBuildingRepository buildingRepository, IMaintenanceRequestRepository maintenanceRequestRepository) : IBuildingMemberService
 {
-    public Task<MaintenanceRequest> CreateMaintenanceRequest(MaintenanceRequestModel request)
+    public Task<MaintenanceRequest> CreateMaintenanceRequest(MaintenanceRequestModel request, ClaimsPrincipal user)
     {
+        var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         var maintenanceRequest = new MaintenanceRequest
         {
             Id = Guid.NewGuid().ToString("D"),
@@ -16,7 +17,7 @@ public class BuildingMemberService(IBuildingRepository buildingRepository) : IBu
             AssignedBuildingId = request.AssignedBuildingId,
             Status = RequestStatus.Pending,
             CreatedDate = DateTime.UtcNow,
-            CreatedByUserId = "iD"
+            CreatedByUserId = userId
         };
 
         return Task.FromResult(maintenanceRequest);
@@ -27,5 +28,12 @@ public class BuildingMemberService(IBuildingRepository buildingRepository) : IBu
         var buildingId = user.FindFirst("buildingId")?.Value;
         var myBuilding = (await buildingRepository.GetBuildings()).FirstOrDefault(i => i.Id == buildingId) ?? throw new Exception("User assigned Building not found");
         return new List<Building> { myBuilding };
+    }
+
+    public async Task<List<MaintenanceRequest>> GetMyRequests(ClaimsPrincipal user)
+    {
+        var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var myRequests = (await maintenanceRequestRepository.GetMaintenanceRequests()).Where(i => i.CreatedByUserId == userId).ToList() ?? throw new Exception("User created Maintenance Requests not found");
+        return myRequests;
     }
 }

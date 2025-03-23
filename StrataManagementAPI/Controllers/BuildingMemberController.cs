@@ -11,6 +11,7 @@ public class BuildingMemberController(IBuildingMemberService buildingMemberServi
 {
 
     [HttpPost("maintenance-request")]
+    [Authorize(Policy = "BuildingMember")]
     public async Task<IActionResult> CreateMaintenanceRequest([FromBody] MaintenanceRequestModel request)
     {
         var maintenanceRequest = await buildingMemberService.CreateMaintenanceRequest(request, User);

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StrataManagementAPI.DataAccess;
 
@@ -8,6 +9,7 @@ namespace StrataManagementAPI.Controllers;
 public class AdminController(IAdminService adminService) : ControllerBase
 {
     [HttpGet("buildings")]
+    [Authorize(Policy = "AdminOnly")]
     public async Task<IActionResult> GetBuildings()
     {
         var buildings = await adminService.GetBuildings();
@@ -15,6 +17,7 @@ public class AdminController(IAdminService adminService) : ControllerBase
     }
 
     [HttpGet("owners")]
+    [Authorize(Policy = "AdminOnly")]
     public async Task<IActionResult> GetOwners()
     {
         var owners = await adminService.GetOwners();
@@ -22,6 +25,7 @@ public class AdminController(IAdminService adminService) : ControllerBase
     }
 
     [HttpGet("tenants")]
+    [Authorize(Policy = "AdminOnly")]
     public async Task<IActionResult> GetTenants()
     {
         var tenants = await adminService.GetTenants();
@@ -29,6 +33,7 @@ public class AdminController(IAdminService adminService) : ControllerBase
     }
 
     [HttpGet("maintenance-requests")]
+    [Authorize(Policy = "AdminOnly")]
     public async Task<IActionResult> GetMaintenanceRequests()
     {
         var maintenanceRequests = await adminService.GetMaintenanceRequests();

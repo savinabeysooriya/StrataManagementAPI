@@ -59,7 +59,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminOnly", policy =>
-        policy.RequireRole("Admin"));
+        policy.RequireAssertion(context =>
+            context.User.IsInRole("Admin")));
 
     options.AddPolicy("BuildingMember", policy =>
         policy.RequireAssertion(context =>
